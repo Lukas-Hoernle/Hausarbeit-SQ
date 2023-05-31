@@ -1,24 +1,25 @@
-\section{Bewertung der Softwarequalität im Fallbeispiel}
-\subsection{Vergleich mit etablierten Methoden zur Performance-Optimierung}
-Die Softwarequalität eines Online-Shops für Elektronikprodukte kann anhand verschiedener Kriterien bewertet werden. Ein wesentlicher Aspekt ist die Performance-Optimierung, insbesondere die Reduzierung der langen Ladezeiten der Produktseiten. Um die Qualität sicherzustellen, können etablierte Methoden zur Performance-Optimierung herangezogen werden.
+\section{Kritik der aktuellen Softwarequalität im Fallbeispiel}
 
-Eine solche Methode ist die Verwendung von Caching-Techniken, um häufig angeforderte Ressourcen zwischenzuspeichern. Durch den Einsatz von Browser-Caching und Content-Delivery-Networks (CDNs) kann die Ladezeit deutlich reduziert werden, da statische Inhalte wie Bilder, CSS- und JavaScript-Dateien nicht jedes Mal neu vom Server geladen werden müssen.
+\subsection{Ursachenanalyse der Performance-Probleme}
+Die Performance-Probleme, insbesondere die langen Ladezeiten der Produktseiten, im Fallbeispiel des Online-Shops für Elektronikprodukte haben verschiedene Ursachen. Eine Ursache liegt in der unzureichenden Nutzung etablierter Methoden zur Performance-Optimierung. Obwohl es etablierte Techniken gibt, um die Ladezeiten zu reduzieren, wurden diese nicht ausreichend implementiert.
 
-Des Weiteren sollte die Datenbankabfrage optimiert werden, um effiziente Abfragen zu gewährleisten. Die Verwendung von Indexen und das Vermeiden unnötiger Abfragen können die Performance verbessern. Zudem ist die Skalierbarkeit der Datenbank von Bedeutung, um auch bei hoher Datenlast eine gute Performance zu gewährleisten.
+Eine der Ursachen liegt in der unzureichenden Nutzung von Caching-Techniken. Browser-Caching und Content-Delivery-Networks (CDNs) können dazu beitragen, statische Inhalte wie Bilder, CSS- und JavaScript-Dateien zwischenzuspeichern und dadurch die Ladezeit zu verkürzen. Allerdings wurde die Implementierung solcher Techniken nicht angemessen umgesetzt.
 
-Die Nutzung von Caching-Strategien für Datenbankabfragen und die Implementierung von serverseitigem Caching können ebenfalls die Ladezeiten verbessern. Durch den Einsatz von In-Memory-Datenbanken oder Caching-Frameworks wie Redis können häufig genutzte Daten im Arbeitsspeicher zwischengespeichert werden, um den Datenbankzugriff zu minimieren.
+Des Weiteren wurden die Datenbankabfragen nicht ausreichend optimiert. Effiziente Abfragen, die Nutzung von Indexen und die Vermeidung unnötiger Abfragen sind entscheidend, um eine gute Performance zu gewährleisten. Die unzureichende Optimierung der Datenbankabfragen führt zu längeren Ladezeiten der Produktseiten.
 
-Eine weitere Methode zur Performance-Optimierung ist die Reduzierung der Datenmenge, die vom Server zum Client übertragen werden muss. Durch Komprimierungstechniken wie Gzip oder Brotli kann die Dateigröße von übertragenen Ressourcen reduziert werden, was zu kürzeren Ladezeiten führt.
+Die aktuelle Software weist auch Schwachstellen bei der Reduzierung der übertragenen Datenmenge auf. Die Komprimierungstechniken wie Gzip oder Brotli wurden nicht angemessen angewendet, um die Dateigröße übertragener Ressourcen zu verringern. Dadurch wird mehr Datenverkehr erzeugt und die Ladezeiten werden negativ beeinflusst.
 
-Darüber hinaus sollte die Code-Qualität überprüft und optimiert werden, um ineffiziente Algorithmen oder Ressourcenverschwendung zu vermeiden. Eine effiziente Verarbeitung von Anfragen und die Vermeidung von unnötigem Code können die Performance erheblich verbessern.
+Ein weiterer Aspekt ist die mangelnde Überprüfung und Optimierung der Code-Qualität. Ineffiziente Algorithmen und Ressourcenverschwendung können zu längeren Ladezeiten führen. Eine gründliche Überprüfung und Optimierung des Codes sind erforderlich, um die Performance zu verbessern.
 
-\subsection{Analyse der Auswirkungen auf die Gesamtsituation}
-Die langen Ladezeiten der Produktseiten im Fallbeispiel des Online-Shops für Elektronikprodukte haben erhebliche Auswirkungen auf die Gesamtsituation des Unternehmens. Eine schlechte Performance führt zu einer negativen Benutzererfahrung und kann potenzielle Kunden abschrecken.
+\subsection{Schwachstellen der aktuellen Softwarequalität}
+Die aktuelle Softwarequalität im Fallbeispiel des Online-Shops für Elektronikprodukte weist verschiedene Schwachstellen auf. Eine der Hauptschwachstellen ist die unzureichende Berücksichtigung etablierter Methoden zur Performance-Optimierung. Die Nichtnutzung von effektiven Techniken wie Caching, Optimierung der Datenbankabfragen, Datenkomprimierung und Code-Optimierung beeinträchtigt die Performance der Software erheblich.
 
-Die Konversionsrate des Online-Shops kann durch die langen Ladezeiten negativ beeinflusst werden. Kunden erwarten eine schnelle und reibungslose Benutzererfahrung, insbesondere bei der Produktansicht. Wenn die Ladezeiten zu lang sind, können Kunden frustriert werden und den Online-Shop vorzeitig verlassen, ohne einen Kauf abzuschließen. Dies führt zu potenziellen Umsatzverlusten für das Unternehmen.
+Die unzureichende Nutzung von Caching-Techniken ist eine Schwachstelle, die zu längeren Ladezeiten führt. Durch die fehlende Implementierung von Browser-Caching und Content-Delivery-Networks (CDNs) werden statische Ressourcen bei jedem Seitenaufruf erneut vom Server geladen, was die Ladezeiten verlängert.
 
-Die Performance-Probleme können auch das Vertrauen der Kunden in den Online-Shop beeinträchtigen. Wenn Kunden wiederholt lange Ladezeiten und Verzögerungen bei der Produktanzeige erleben, können sie Zweifel an der Zuverlässigkeit des Shops haben. Sie könnten Bedenken hinsichtlich der Sicherheit ihrer Daten haben oder die Qualität der angebotenen Produkte in Frage stellen. Ein negatives Kundenerlebnis kann zu einem Verlust an Glaubwürdigkeit führen und das Image des Online-Shops beeinträchtigen.
+Des Weiteren ist die unzureichende Optimierung der Datenbankabfragen eine Schwachstelle. Ohne effiziente Abfragen, Nutzung von Indexen und Vermeidung unnötiger Abfragen leidet die Performance der Software.
 
-Des Weiteren hat die Performance des Online-Shops einen direkten Einfluss auf die Wettbewerbsfähigkeit. In einer digitalisierten Welt haben Kunden eine Vielzahl von alternativen Online-Shops zur Auswahl. Wenn andere Anbieter schnellere Ladezeiten und eine bessere Performance bieten, besteht die Gefahr, dass Kunden zu diesen wechseln und dem Unternehmen Umsatz entgeht. Eine gute Performance kann ein Wettbewerbsvorteil sein und Kunden dazu ermutigen, den Online-Shop zu bevorzugen.
+Die unzureichende Reduzierung der übertragenen Datenmenge ist eine weitere Schwachstelle. Ohne angemessene Komprimierungstechniken wie Gzip oder Brotli werden größere Dateigrößen übertragen, was zu längeren Ladezeiten führt.
 
-Insgesamt sind die langen Ladezeiten der Produktseiten ein kritischer Punkt, der die Qualität und Wettbewerbsfähigkeit des Online-Shops für Elektronikprodukte beeinträchtigt. Durch die Optimierung der Performance können Umsatzverluste vermieden, das Vertrauen der Kunden gestärkt und die Wettbewerbsfähigkeit verbessert werden.
+Zudem ist die mangelnde Überprüfung und Optimierung der Code-Qualität eine Schwachstelle der aktuellen Software. Ineffiziente Algorithmen und Ressourcenverschwendung beeinträchtigen die Performance und führen zu längeren Ladezeiten.
+
+Die identifizierten Schwachstellen der aktuellen Softwarequalität haben direkte Auswirkungen auf die Performance des Online-Shops für Elektronikprodukte und beeinträchtigen die Benutzererfahrung sowie die Wettbewerbsfähigkeit des Unternehmens.
