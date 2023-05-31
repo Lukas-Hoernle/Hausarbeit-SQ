@@ -1,20 +1,20 @@
 \section{Kritik der Softwarequalität im Fallbeispiel}
 
 \subsection{Ursachenanalyse der Performance-Probleme}
-Die Performance-Probleme, insbesondere die langen Ladezeiten der Produktseiten, im Fallbeispiel des Online-Shops für Elektronikprodukte haben mehrere Ursachen. Eine Ursache liegt in der unzureichenden Nutzung etablierter Performance-Optimierungsmethoden. Obwohl es bewährte Techniken gibt, um die Ladezeiten zu reduzieren, wurden diese nicht ausreichend implementiert.
+Die Performance-Probleme im Fallbeispiel des Online-Shops für Elektronikprodukte haben mehrere Ursachen. Eine liegt in der unzureichenden Nutzung etablierter Performance-Optimierungsmethoden. Bewährte Techniken zur Reduzierung der Ladezeiten wurden nicht ausreichend implementiert.
 
-Eine weitere Ursache ist die unzureichende Nutzung von Caching-Techniken. Browser-Caching und Content-Delivery-Networks (CDNs) können die Ladezeit verkürzen, indem sie statische Inhalte wie Bilder, CSS- und JavaScript-Dateien zwischenspeichern. Allerdings wurde die Implementierung solcher Techniken nicht angemessen umgesetzt.
+Eine weitere Ursache ist die unzureichende Nutzung von Caching-Techniken. Browser-Caching und Content-Delivery-Networks (CDNs) können die Ladezeit verkürzen, indem sie statische Inhalte zwischenspeichern. Allerdings wurde die Implementierung solcher Techniken nicht angemessen umgesetzt.
 
-Des Weiteren wurden die Datenbankabfragen nicht ausreichend optimiert. Effiziente Abfragen, Nutzung von Indexen und Vermeidung unnötiger Abfragen sind entscheidend, um eine gute Performance sicherzustellen. Die unzureichende Optimierung der Datenbankabfragen führt zu längeren Ladezeiten der Produktseiten.
+Des Weiteren wurden die Datenbankabfragen nicht ausreichend optimiert. Effiziente Abfragen, Nutzung von Indexen und Vermeidung unnötiger Abfragen sind entscheidend für eine gute Performance. Die unzureichende Optimierung der Datenbankabfragen führt zu längeren Ladezeiten der Produktseiten.
 
-Auch die Reduzierung der übertragenen Datenmenge weist Schwachstellen auf. Die angemessene Anwendung von Komprimierungstechniken wie Gzip oder Brotli zur Verringerung der Dateigröße übertragener Ressourcen wurde vernachlässigt. Dadurch entsteht mehr Datenverkehr, der die Ladezeiten negativ beeinflusst.
+Auch die Reduzierung der übertragenen Datenmenge weist Schwachstellen auf. Die angemessene Anwendung von Komprimierungstechniken wie Gzip oder Brotli wurde vernachlässigt. Dadurch entsteht mehr Datenverkehr, der die Ladezeiten negativ beeinflusst.
 
 Ein weiterer Aspekt ist die mangelnde Überprüfung und Optimierung der Code-Qualität. Ineffiziente Algorithmen und Ressourcenverschwendung können zu längeren Ladezeiten führen. Eine gründliche Überprüfung und Optimierung des Codes sind erforderlich, um die Performance zu verbessern.
 
 \subsection{Schwachstellen der aktuellen Softwarequalität}
 Die aktuelle Softwarequalität im Fallbeispiel des Online-Shops für Elektronikprodukte weist verschiedene Schwachstellen auf. Eine Hauptursache liegt in der unzureichenden Berücksichtigung etablierter Methoden zur Performance-Optimierung. Die Nichtnutzung von effektiven Techniken wie Caching, Optimierung der Datenbankabfragen, Datenkomprimierung und Code-Optimierung beeinträchtigt die Performance der Software erheblich.
 
-Die unzureichende Nutzung von Caching-Techniken ist eine Schwachstelle, die zu längeren Ladezeiten führt. Durch die fehlende Implementierung von Browser-Caching und Content-Delivery-Networks (CDNs) werden statische Ressourcen bei jedem Seitenaufruf erneut vom Server geladen, was die Ladezeiten verlängert.
+Die unzureichende Nutzung von Caching-Techniken ist eine Schwachstelle, die zu längeren Ladezeiten führt. Durch die fehlende Implementierung von Browser-Caching und CDNs werden statische Ressourcen bei jedem Seitenaufruf erneut geladen, was die Ladezeiten verlängert.
 
 Des Weiteren ist die unzureichende Optimierung der Datenbankabfragen eine Schwachstelle. Ohne effiziente Abfragen, Nutzung von Indexen und Vermeidung unnötiger Abfragen leidet die Performance der Software.
 
@@ -26,13 +26,13 @@ Die identifizierten Schwachstellen der aktuellen Softwarequalität haben direkte
 
 \section{Erarbeitung von Optimierungsmaßnahmen}
 \subsection{Maßnahmen zur Verbesserung der Performance}
-Die Verbesserung der Performance im Fallbeispiel des Online-Shops für Elektronikprodukte erfordert gezielte Maßnahmen zur Behebung der identifizierten Schwachstellen. Durch eine Optimierung des Datenbankzugriffs können effizientere Abfragen und die Nutzung von Indexen implementiert werden. Dadurch lassen sich die Ladezeiten der Produktseiten reduzieren.
+Die Verbesserung der Performance im Fallbeispiel des Online-Shops für Elektronikprodukte erfordert gezielte Maßnahmen zur Behebung der identifizierten Schwachstellen. Durch eine Optimierung des Datenbankzugriffs können effizientere Abfragen und die Nutzung von Indexen implementiert werden, um die Ladezeiten der Produktseiten zu reduzieren.
 
-Eine weitere wichtige Maßnahme ist die Implementierung von Caching-Strategien für häufig angeforderte Daten. Durch die Nutzung von Browser-Caching und Content-Delivery-Networks (CDNs) können statische Inhalte wie Bilder, CSS- und JavaScript-Dateien zwischengespeichert und bei Bedarf schnell ausgeliefert werden. Dadurch wird die Ladezeit für wiederkehrende Seitenaufrufe erheblich verkürzt.
+Eine weitere wichtige Maßnahme ist die Implementierung von Caching-Strategien für häufig angeforderte Daten. Durch die Nutzung von Browser-Caching und CDNs können statische Inhalte wie Bilder, CSS- und JavaScript-Dateien zwischengespeichert und schnell ausgeliefert werden. Dadurch wird die Ladezeit für wiederkehrende Seitenaufrufe erheblich verkürzt.
 
 \subsection{Auswirkungen der Optimierungsmaßnahmen auf die Gesamtsituation}
 Die Umsetzung dieser Optimierungsmaßnahmen wird voraussichtlich signifikante Auswirkungen auf die Gesamtsituation des Online-Shops für Elektronikprodukte haben. Durch die Optimierung des Datenbankzugriffs können die Abfragezeiten reduziert werden, was zu schnelleren Produktseiten und insgesamt verbesserter Performance führt.
 
-Die Implementierung von Caching-Strategien wird die Ladezeiten für häufig angeforderte Daten deutlich verkürzen und somit die Benutzererfahrung verbessern. Kunden werden in der Lage sein, schnell auf Produktseiten zuzugreifen und effizient zu navigieren.
+Die Implementierung von Caching-Strategien wird die Ladezeiten für häufig angeforderte Daten deutlich verkürzen und somit die Benutzererfahrung verbessern. Kunden werden schnell auf Produktseiten zugreifen und effizient navigieren können.
 
 Durch die erfolgreiche Umsetzung dieser Maßnahmen zur Verbesserung der Performance wird der Online-Shop für Elektronikprodukte in der Lage sein, die identifizierten Schwachstellen der aktuellen Softwarequalität zu beheben. Dies wird zu einer verbesserten Benutzererfahrung, höherer Kundenzufriedenheit und gesteigerten Wettbewerbsfähigkeit des Unternehmens führen.

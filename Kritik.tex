@@ -1,18 +1,18 @@
-\section{Kritik der aktuellen Softwarequalität im Fallbeispiel}
+\section{Kritik der Softwarequalität im Fallbeispiel}
 
 \subsection{Ursachenanalyse der Performance-Probleme}
-Die Performance-Probleme, insbesondere die langen Ladezeiten der Produktseiten, im Fallbeispiel des Online-Shops für Elektronikprodukte haben verschiedene Ursachen. Eine Ursache liegt in der unzureichenden Nutzung etablierter Methoden zur Performance-Optimierung. Obwohl es etablierte Techniken gibt, um die Ladezeiten zu reduzieren, wurden diese nicht ausreichend implementiert.
+Die Performance-Probleme, insbesondere die langen Ladezeiten der Produktseiten, im Fallbeispiel des Online-Shops für Elektronikprodukte haben mehrere Ursachen. Eine Ursache liegt in der unzureichenden Nutzung etablierter Performance-Optimierungsmethoden. Obwohl es bewährte Techniken gibt, um die Ladezeiten zu reduzieren, wurden diese nicht ausreichend implementiert.
 
-Eine der Ursachen liegt in der unzureichenden Nutzung von Caching-Techniken. Browser-Caching und Content-Delivery-Networks (CDNs) können dazu beitragen, statische Inhalte wie Bilder, CSS- und JavaScript-Dateien zwischenzuspeichern und dadurch die Ladezeit zu verkürzen. Allerdings wurde die Implementierung solcher Techniken nicht angemessen umgesetzt.
+Eine weitere Ursache liegt in der unzureichenden Nutzung von Caching-Techniken. Browser-Caching und Content-Delivery-Networks (CDNs) können dazu beitragen, die Ladezeit zu verkürzen, indem sie statische Inhalte wie Bilder, CSS- und JavaScript-Dateien zwischenspeichern. Allerdings wurde die Implementierung solcher Techniken nicht angemessen umgesetzt.
 
-Des Weiteren wurden die Datenbankabfragen nicht ausreichend optimiert. Effiziente Abfragen, die Nutzung von Indexen und die Vermeidung unnötiger Abfragen sind entscheidend, um eine gute Performance zu gewährleisten. Die unzureichende Optimierung der Datenbankabfragen führt zu längeren Ladezeiten der Produktseiten.
+Des Weiteren wurden die Datenbankabfragen nicht ausreichend optimiert. Effiziente Abfragen, Nutzung von Indexen und Vermeidung unnötiger Abfragen sind entscheidend, um eine gute Performance sicherzustellen. Die unzureichende Optimierung der Datenbankabfragen führt zu längeren Ladezeiten der Produktseiten.
 
-Die aktuelle Software weist auch Schwachstellen bei der Reduzierung der übertragenen Datenmenge auf. Die Komprimierungstechniken wie Gzip oder Brotli wurden nicht angemessen angewendet, um die Dateigröße übertragener Ressourcen zu verringern. Dadurch wird mehr Datenverkehr erzeugt und die Ladezeiten werden negativ beeinflusst.
+Auch die Reduzierung der übertragenen Datenmenge weist Schwachstellen auf. Die angemessene Anwendung von Komprimierungstechniken wie Gzip oder Brotli zur Verringerung der Dateigröße übertragener Ressourcen wurde vernachlässigt. Dadurch entsteht mehr Datenverkehr, der die Ladezeiten negativ beeinflusst.
 
 Ein weiterer Aspekt ist die mangelnde Überprüfung und Optimierung der Code-Qualität. Ineffiziente Algorithmen und Ressourcenverschwendung können zu längeren Ladezeiten führen. Eine gründliche Überprüfung und Optimierung des Codes sind erforderlich, um die Performance zu verbessern.
 
 \subsection{Schwachstellen der aktuellen Softwarequalität}
-Die aktuelle Softwarequalität im Fallbeispiel des Online-Shops für Elektronikprodukte weist verschiedene Schwachstellen auf. Eine der Hauptschwachstellen ist die unzureichende Berücksichtigung etablierter Methoden zur Performance-Optimierung. Die Nichtnutzung von effektiven Techniken wie Caching, Optimierung der Datenbankabfragen, Datenkomprimierung und Code-Optimierung beeinträchtigt die Performance der Software erheblich.
+Die aktuelle Softwarequalität im Fallbeispiel des Online-Shops für Elektronikprodukte weist verschiedene Schwachstellen auf. Eine Hauptursache liegt in der unzureichenden Berücksichtigung etablierter Methoden zur Performance-Optimierung. Die Nichtnutzung von effektiven Techniken wie Caching, Optimierung der Datenbankabfragen, Datenkomprimierung und Code-Optimierung beeinträchtigt die Performance der Software erheblich.
 
 Die unzureichende Nutzung von Caching-Techniken ist eine Schwachstelle, die zu längeren Ladezeiten führt. Durch die fehlende Implementierung von Browser-Caching und Content-Delivery-Networks (CDNs) werden statische Ressourcen bei jedem Seitenaufruf erneut vom Server geladen, was die Ladezeiten verlängert.
 
